@@ -6,7 +6,6 @@ html {
 body {
     background-color: #f5f5f5;
     font-family: 'open sans', sans-serif;
-    scrollbar
 }
 
 .main-container {
@@ -138,7 +137,6 @@ footer {
     float: left;
     padding: 20px;
     width: 100%;
-    max-width: 100%;
 }
 
 footer p {

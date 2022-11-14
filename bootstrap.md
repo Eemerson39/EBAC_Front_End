@@ -72,3 +72,19 @@ html {
 
 </style>
 ```
+
+## Componentes
+- Blocos / Modelos / Templates reútilizaveis
+
+## Helpers
+- Funções básicas
+- Incrementos
+- Ajustes
+
+## Font Awesome
+- Biblioteca de ícones
+
+## Exercício
+- incluir carousel na home antes de sobre
+- completar o cadastro, tornando os campos obrigatorios
+- incluir campos: bairro, complemento e telefone

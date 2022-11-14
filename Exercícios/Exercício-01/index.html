@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <img id="logo" src="./imagens/pexels-artem-podrez-7774029.jpg" alt="Logo">
+
+                </div>
+                <div class="col" id="links">
+                    <ul class="nav justify-content-end" id="nav">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE NÓS-->
+
+    <section id="sobre">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+
+                    <h2>Sobre Nós</h2>
+                    <p>
+                        Nossa loja digital está sempre aberta, queira você baixar o jogo que está esperando ou apenas
+                        ver o que oferecemos para encontrar sua próxima aventura.<br>
+                        Tenha certeza de que aqui você terá uma excelente experiência de compra. Nossos produtos são
+                        selecionados entre os melhores fornecedores do mercado e nosso preço ahhhhh super competitivo.<br>
+                        Nosso foco é que seu pedido chegue em perfeito estado até sua casa, nossa atenção e cuidado com
+                        cada etapa é nossa garantia de qualidade.<br>
+
+                        Embalamos o seu pedido de forma que ele não sofra avarias durante o percurso, mas caso você
+                        tenha algum problema não deixe de nos procurar em nossos canais de atendimento.<br>
+
+                        Agradecemos pela confiança e esperamos que a gente se encontre de novo em breve.
+                    </p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="https://images.pexels.com/photos/21067/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRODUTOS-->
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <!-- PRODUTO 1-->
+
+                    <div class="card">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/a0DyIs2SEHrYpciM1ideU1wv.jpg" alt="Imagem Exemplo" class="imd-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">GOD OF WAR: RAGNAROK</h5>
+                            <p class="card-text">
+                                Viva a nova aventura de Kratos e Atreus no mundo nórdico!
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-01">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 2-->
+
+                    <div class="card">
+                        <img src="https://tm.ibxk.com.br/2021/11/09/09110503577156.jpg" alt="Imagem Exemplo" class="imd-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">FORZA HORIZON 5</h5>
+                            <p class="card-text">
+                                Explore as paisagens do mundo aberto vibrante e em constante evolução do México.
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-02">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <!-- PRODUTO 3-->
+
+                    <div class="card">
+                        <img src="https://puropop.com.br/wp-content/uploads/2019/02/Resident-Evil-2.jpg" alt="Imagem Exemplo" class="imd-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">RESIDENT EVIL 2</h5>
+                            <p class="card-text">
+                                Presencie o retorno de Resident Evil 2. Retorne ao horror de Raccoon city.
+                                
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-03">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Preencha os campos ao lado para receber novidades sobre descontos e promoções!</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" id="" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" id="" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="input-group">
+                            <textarea name="" rows="5" placeholder="Digite uma mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">Quero receber noviades!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MODAL 1-->
+
+    <div class="modal fade" id="modal-01">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">GOD OF WAR: RAGNAROK</h5>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Edição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Edição Padrão - PS4</td>
+                                <td>R$299,90</td>
+                            </tr>
+                            <tr>
+                                <td>Edição Padrão - PS5</td>
+                                <td>R$359,90</td>
+                            </tr>
+                            <tr>
+                                <td>Edição Digital Deluxe - PS4 e PS5</td>
+                                <td>R$399,90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+
+    <div class="modal fade" id="modal-02">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FORZA HORIZON 5</h5>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Edição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Edição Padrão - XBOX ONE</td>
+                                <td>R$249,00</td>
+                            </tr>
+                            <tr>
+                                <td>Edição de Luxo - XBOX ONE</td>
+                                <td>R$309,00</td>
+                            </tr>
+                            <tr>
+                                <td>Edição Suprema - XBOX SERIES</td>
+                                <td>R$399,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    
+    <div class="modal fade" id="modal-03">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">RESIDENT EVIL 2</h5>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Edição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Edição Padrão - PS4 e XBOX ONE</td>
+                                <td>R$199,50</td>
+                            </tr>
+                            <tr>
+                                <td>Edição Deluxe - PS4 e XBOX ONE</td>
+                                <td>R$207,90</td>
+                            </tr>
+                            <tr>
+                                <td>Demonstração</td>
+                                <td>Gratuito</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

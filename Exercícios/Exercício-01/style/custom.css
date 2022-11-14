@@ -1,0 +1,132 @@
+body {
+    background: url(../imagens/background.jpg) center top repeat;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    border: 5px solid yellow;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+#sobre {
+    border-top: 5px solid black;
+    background-color: white;
+    border-radius: 2%;
+}
+
+#sobre img {
+    border: 3px solid black;
+    border-radius: 2%;
+    object-fit: cover;
+}
+
+h2 {
+    background-color: white;
+    color: blue;
+    width: 170px;
+    text-align: center;
+    border-radius: 8%;
+    font-weight: bold;
+}
+
+h2:hover {
+    background-color: rgb(194, 193, 193);
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item {
+    border-right: 2px solid white;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border-radius: 7%;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.card {
+    transition: .2s;
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+.card img {
+    width: 412px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+#contato {
+    background-color: white;
+    border-top: 5px solid black;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+/* Laptop */
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        background: url(https://img.freepik.com/free-vector/alien-planet-landscape-cosmic-background-deserted-coastline-with-mountains-view-glowing-cleft-stars-shining-spheres-space-extraterrestrial-pc-game-backdrop-cartoon-vector-illustration_107791-8012.jpg?w=2000) center top repeat;
+        background-size: 100%;
+    }
+
+    .card img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* Tablet */
+@media(max-width: 768px) and (min-width: 426px) {
+    .nav {
+        width: 400px;
+    }
+    .card {
+        width: 210px;
+    }
+    .card img {
+        width: auto;
+    }
+}
+
+/* Smartphone */
+@media(max-width: 426px) and (min-width: 321px) {
+    body {
+        background: url(https://img.freepik.com/free-vector/alien-planet-landscape-cosmic-background-deserted-coastline-with-mountains-view-glowing-cleft-stars-shining-spheres-space-extraterrestrial-pc-game-backdrop-cartoon-vector-illustration_107791-8012.jpg?w=2000) center top repeat;
+        background-size: 100%;
+    }
+    #logo {
+        width: 90px;
+        height: auto;
+        border: 3px solid yellow;
+         
+    }
+    .nav {
+        background-color: rgba(27, 1, 141, 0.511);
+        width: 370px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card img {
+        width: auto;
+    }
+}

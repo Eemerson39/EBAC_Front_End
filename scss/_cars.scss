@@ -8,5 +8,8 @@
         a {
             background-color: $color-default;
         }
+        a:hover {
+            border: 5px solid rgb(175, 2, 2);
+        }
     }
 }

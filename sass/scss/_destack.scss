@@ -1,0 +1,24 @@
+.destack {
+    background-color: $color-04;
+    padding: $space-default;
+    h1 {
+        color: $color-03;
+        font-size: $font-big;
+    }
+    h2 {
+        font-size: $font-small;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        font-size: $font-normal;
+        color: $color-01;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    div {
+        
+    }
+}

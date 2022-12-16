@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: 0;
   margin: 0;
@@ -13,6 +14,7 @@ p {
   display: block;
 }
 
+article,
 header,
 section,
 footer {
@@ -28,7 +30,12 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
 }
 
 img {
@@ -43,14 +50,14 @@ body {
 }
 
 p {
-  color: #fff;
+  color: rgb(240, 157, 68);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
 h1 {
-  color: #fff;
+  color: rgb(240, 157, 68);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
   margin-top: 3rem;
@@ -58,7 +65,7 @@ h1 {
 
 h2 {
   color: #999;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -71,73 +78,208 @@ footer {
   background-color: #dedede;
 }
 
-.blocks h2 {
-  color: #fff;
+.blocks {
+  /*
+      BEM CSS
+      - Block
+      - Element
+      - Modifier
+
+      - Padrão de Projeto / Design Paterns
+
+      Exemplo: 
+      .cars__title
+      .cars__list
+      .cars__item
+      .cars__item--destack
+      .cars__button
+      .cars__img-container
+
+      .blocks__element--modifier
+
+      .b__e--m
+  */
+  padding: 3rem 0;
 }
-.blocks ul {
+.blocks__title {
+  color: rgb(240, 157, 68);
+}
+.blocks__list {
   list-style-type: none;
   font-size: 1.2rem;
   display: block;
-  height: 250px;
+  float: left;
+  height: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
-.blocks li {
+.blocks__item {
   color: #999;
   display: block;
   float: left;
   margin: 1rem 1.5rem;
-  width: 30%;
+  text-align: center;
+  width: calc(33% - 15px);
 }
-.blocks li .img-container {
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
   display: block;
-  height: 200px;
+  height: 15rem;
   overflow: hidden;
   width: 100%;
 }
-.blocks li a {
-  background-color: #fff;
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 1.5rem;
+}
+.blocks__description--destack {
+  color: #999;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+.blocks__button {
+  background-color: rgb(240, 157, 68);
   border-radius: 5px;
   color: white;
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin: 3rem auto 1.5rem;
   padding: 4px 8px;
   text-align: center;
   text-decoration: none;
 }
 
-.cars h2 {
+.cars__title {
   color: #999;
 }
-.cars li {
+.cars__item {
+  border: 1px solid #CCC;
+  background-color: #fff;
   color: #222;
+  display: block;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
 }
-.cars li a {
+.cars__item--destack {
+  border: 1px solid rgb(240, 157, 68);
+  background-color: #222;
+}
+.cars__item__button {
   background-color: #444;
 }
-.cars li a:hover {
-  border: 5px solid rgb(175, 2, 2);
+
+.blocks {
+  /*
+      BEM CSS
+      - Block
+      - Element
+      - Modifier
+
+      - Padrão de Projeto / Design Paterns
+
+      Exemplo: 
+      .cars__title
+      .cars__list
+      .cars__item
+      .cars__item--destack
+      .cars__button
+      .cars__img-container
+
+      .blocks__element--modifier
+
+      .b__e--m
+  */
+  padding: 3rem 0;
+}
+.blocks__title {
+  color: rgb(240, 157, 68);
+}
+.blocks__list {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+.blocks__item {
+  color: #999;
+  display: block;
+  float: left;
+  margin: 1rem 1.5rem;
+  text-align: center;
+  width: calc(33% - 15px);
+}
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
+  display: block;
+  height: 15rem;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 1.5rem;
+}
+.blocks__description--destack {
+  color: #999;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+.blocks__button {
+  background-color: rgb(240, 157, 68);
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 2.5rem;
+  margin: 3rem auto 1.5rem;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .destack {
   background-color: #222;
   padding: 1.5rem;
 }
-.destack h1 {
+.destack__title {
   color: #f00;
   font-size: 3rem;
 }
-.destack h2 {
+.destack__subtitle {
   font-size: 1.2rem;
 }
-.destack img {
+.destack__image {
   width: 100%;
   height: auto;
 }
-.destack p {
+.destack__description {
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(240, 157, 68);
   padding: 2rem 0;
   width: 100%;
 }

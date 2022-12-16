@@ -1,43 +1,88 @@
 .blocks {
 
-    h2 {
+    /*
+        BEM CSS
+        - Block
+        - Element
+        - Modifier
+
+        - Padrão de Projeto / Design Paterns
+
+        Exemplo: 
+        .cars__title
+        .cars__list
+        .cars__item
+        .cars__item--destack
+        .cars__button
+        .cars__img-container
+
+        .blocks__element--modifier
+
+        .b__e--m
+    */
+
+    padding: 3rem 0;
+
+    &__title {
         color: $color-01;
     }
 
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: block;
-        height: 250px;
+        float: left;
+        height: auto;
+        margin: $space-default auto;
         padding: 1rem 0;
         width: 100%;
     }
 
-    li {
+    &__item {
         color: $color-02;
         display: block;
         float: left;
         margin: 1rem 1.5rem;
-        width: 30%;
+        text-align: center;
+        width: calc(99% / 3 - 15px);
 
-
-        .img-container {
-            display: block;
-            height: 200px;
-            overflow: hidden;
-            width: 100%;
+        @media(max-width: $tablet) {
+            width: calc(99% - 30px);
         }
 
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $mt-02 auto $mb;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
+
+        
+    }
+    &__img-container {
+        display: block;
+        height: 15rem;
+        overflow: hidden;
+        width: 100%;
+        @media (max-width: $tablet) {
+            height: 20rem;
         }
+    }
+
+    &__description {
+        color: $color-default;
+        font-size: $font-normal;
+
+        &--destack {
+            color: $color-02;
+            padding: $space-default;
+            margin-top: $mt;
+        }
+    }
+
+    &__button {
+        background-color: $color-01;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font-size: $font-medium;
+        margin: $mt-02 auto $mb;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
     }
 }

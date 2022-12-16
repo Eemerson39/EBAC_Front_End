@@ -1,15 +1,30 @@
+@import 'blocks';
+@mixin theme($theme: $color-01, $bg: $color-04) {
+    border: 1px solid $theme;
+    background-color: $bg;
+}
+
+
 .cars {
-    h2 {
+    &__title {
         color: $color-02;
     }
-    li {
+    &__item {
+        @include theme($theme: #CCC, $bg: #fff);
         color: $color-04;
-
-        a {
-            background-color: $color-default;
+        display: block;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+        
+        &--destack {
+            @include theme;
         }
-        a:hover {
-            border: 5px solid rgb(175, 2, 2);
+
+    &__button {
+            background-color: $color-default;
         }
     }
 }

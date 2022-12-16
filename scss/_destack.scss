@@ -1,0 +1,39 @@
+.destack {
+    background-color: $color-04;
+    padding: $space-default;
+    &__title {
+        color: $color-03;
+        font-size: $font-big;
+        @media(max-width: $smartphone-01) {
+            position: relative;
+            right: 40px;
+        }
+    }
+    &__subtitle {
+        font-size: $font-small;
+        @media(max-width: $smartphone-01) {
+            position: relative;
+            right: 40px;
+        }
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+        @media(max-width: $smartphone-01) {
+            width: 500px;
+            position: relative;
+            right: 50px;;
+        }
+    }
+    &__description {
+        font-size: $font-normal;
+        color: $color-01;
+        padding: 2rem 0;
+        width: 100%;
+        @media(max-width: $smartphone-01) {
+            position: relative;
+            right: 40px;
+            font-size: $font-small;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import 'blocks';
+@mixin theme($theme: $color-01, $bg: $color-04) {
+    border: 1px solid $theme;
+    background-color: $bg;
+}
+
+
+.cars {
+    &__title {
+        font-family: $font-family-default;
+        color: $color-02;
+    }
+    &__item {
+        @include theme($theme: #CCC, $bg: #fff);
+        color: $color-04;
+        display: block;
+        float: left;
+        height: 45rem;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+        @media (max-width: $laptop-02) {
+            height: 36rem;
+        }
+        @media(max-width: $tablet) {
+            height: 32rem;
+        }
+        @media(max-width: $smartphone-01) {
+            height: 38rem;
+        }
+        
+        &--destack {
+            @include theme;
+        }
+
+    &__button {
+            background-color: $color-default;
+        }
+    }
+}

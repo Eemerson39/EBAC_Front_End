@@ -1,0 +1,296 @@
+@charset "UTF-8";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div,
+p {
+  display: block;
+}
+
+article,
+header,
+section {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+section {
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+p {
+  color: rgb(240, 157, 68);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  color: rgb(240, 157, 68);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  color: #999;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #f00;
+  font-size: 1.5rem;
+}
+
+header,
+footer {
+  background-color: #dedede;
+}
+
+.blocks {
+  /*
+      BEM CSS
+      - Block
+      - Element
+      - Modifier
+
+      - Padrão de Projeto / Design Paterns
+
+      Exemplo: 
+      .cars__title
+      .cars__list
+      .cars__item
+      .cars__item--destack
+      .cars__button
+      .cars__img-container
+
+      .blocks__element--modifier
+
+      .b__e--m
+  */
+  padding: 3rem 0;
+}
+.blocks__title {
+  color: rgb(240, 157, 68);
+}
+.blocks__list {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+.blocks__item {
+  color: #999;
+  display: block;
+  float: left;
+  margin: 1rem 1.5rem;
+  text-align: center;
+  width: 472px;
+}
+@media (max-width: 1440px) {
+  .blocks__item {
+    width: 445px;
+    height: 15rem;
+  }
+}
+@media (max-width: 1024px) {
+  .blocks__item {
+    width: 272px;
+    margin: 0.5rem 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .blocks__item {
+    width: 201px;
+  }
+}
+@media (max-width: 426px) {
+  .blocks__item {
+    width: 332px;
+  }
+}
+.blocks__img-container {
+  display: block;
+  height: 15rem;
+  overflow: hidden;
+  width: 472px;
+  height: 25rem;
+  object-position: bottom;
+}
+@media (max-width: 1440px) {
+  .blocks__img-container {
+    width: 445px;
+    height: 25rem;
+  }
+}
+@media (max-width: 1024px) {
+  .blocks__img-container {
+    width: 272px;
+    height: 14rem;
+  }
+}
+@media (max-width: 768px) {
+  .blocks__img-container {
+    width: 201px;
+    height: 11rem;
+  }
+}
+@media (max-width: 426px) {
+  .blocks__img-container {
+    width: 332px;
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .blocks__description {
+    font-size: 1.2rem;
+  }
+}
+.blocks__description--destack {
+  color: #999;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+.blocks__button {
+  background-color: rgb(240, 157, 68);
+  border-radius: 5px;
+  color: white;
+  display: block;
+  width: 20rem;
+  font-size: 2.5rem;
+  margin: 3rem auto 1.5rem;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .blocks__button {
+    width: 15rem;
+  }
+}
+
+.cars__title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+}
+.cars__item {
+  border: 1px solid #CCC;
+  background-color: #fff;
+  color: #222;
+  display: block;
+  float: left;
+  height: 45rem;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
+}
+@media (max-width: 1024px) {
+  .cars__item {
+    height: 36rem;
+  }
+}
+@media (max-width: 768px) {
+  .cars__item {
+    height: 32rem;
+  }
+}
+@media (max-width: 426px) {
+  .cars__item {
+    height: 38rem;
+  }
+}
+.cars__item--destack {
+  border: 1px solid rgb(240, 157, 68);
+  background-color: #222;
+}
+.cars__item__button {
+  background-color: #444;
+}
+
+.destack {
+  background-color: #222;
+  padding: 1.5rem;
+}
+.destack__title {
+  color: #f00;
+  font-size: 3rem;
+}
+@media (max-width: 426px) {
+  .destack__title {
+    position: relative;
+    right: 40px;
+  }
+}
+.destack__subtitle {
+  font-size: 1.2rem;
+}
+@media (max-width: 426px) {
+  .destack__subtitle {
+    position: relative;
+    right: 40px;
+  }
+}
+.destack__image {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 426px) {
+  .destack__image {
+    width: 500px;
+    position: relative;
+    right: 50px;
+  }
+}
+.destack__description {
+  font-size: 1.5rem;
+  color: rgb(240, 157, 68);
+  padding: 2rem 0;
+  width: 100%;
+}
+@media (max-width: 426px) {
+  .destack__description {
+    position: relative;
+    right: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+body {
+    background: url(https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) top repeat;
+}
+
+form {
+    border: 1px solid #999;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    background: white;
+}
+
+form h2 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.input-group,
+input {
+    display: block;
+    font-size: 1.8rem;
+    width: 50rem;
+    margin: 1rem auto
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+button {
+    border-radius: 5px;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%
+}
+
+#mensagem {
+    background: white;
+    border: black solid;
+    border-radius: 10px;
+    padding-left: 5%;
+    width: 1038px;
+    ;
+}
+
+#form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f00;
+    text-transform: capitalize;
+}
+
+strong {
+    font-size: 1.4rem;
+}
